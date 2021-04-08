@@ -14,5 +14,5 @@ All interactions are welcome! Get in touch with compliments and advice for impro
  
 See you soon!
  
-L Pinto
+L Pinto 
 nogueiralhsp@gmail.com

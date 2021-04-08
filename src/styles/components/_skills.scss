@@ -1,11 +1,20 @@
 .skill-page-content {
      color: $off-white;
      min-height: 50rem;
+     margin-top: $xl-size;
+     text-align: center;
 }
+
 .web-dev-container {
-     margin-bottom: 5rem;
+     margin-bottom: 10rem;
 }
-.skill-page-content h2 {
+
+.skill-icon-container {
+     display: flex;
+     gap: $xl-size;
+     justify-content: center;
+}
+.skill-page-content h1 {
      color: $off-white;
      text-align: center;
 }
