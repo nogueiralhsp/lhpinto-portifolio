@@ -4,7 +4,6 @@ import ContactPage from  './ContactPage'
 import Footer from './Footer'
 import Header from './Header'
 import HomePage from './HomePage'
-import NotFoundPage from './NotFoundPage'
 import SkillPage from './SkilsPage'
 
 
@@ -14,6 +13,5 @@ export {
      Footer,
      Header,
      HomePage,
-     NotFoundPage,
      SkillPage
 }

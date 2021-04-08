@@ -7,7 +7,6 @@ import {
     Footer,
     Header,
     HomePage,
-    NotFoundPage,
     SkillPage
 } from '../components'
 
@@ -21,7 +20,6 @@ const AppRouter = () => (
                     <Route path="/about" component={AboutPage} />
                     <Route path="/skills" component={SkillPage} />
                     <Route path="/contact" component={ContactPage} />
-                    <Route component={NotFoundPage} />
                 </Switch>
             </div>
         </div>
