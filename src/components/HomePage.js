@@ -24,8 +24,6 @@ const useStyles = makeStyles((theme) => ({
      },
 }));
 
-const cards = [1, 2];//, 3, 4, 5, 6, 7, 8, 9];
-
 const projects = [{
      projectName: 'My portfolio',
      url: '/',
@@ -71,7 +69,7 @@ function HomePage() {
                          {projects.map((project) => (
                               <Grid item key={project.projectName} xs={12} sm={6} md={4}>
                                    <Card className="card">
-                                        <a href={project.url} target="_blank">
+                                        <a href={project.url} target="blank">
                                              <CardMedia
                                                   className={classes.cardMedia}
                                                   image={project.image}
@@ -88,10 +86,10 @@ function HomePage() {
                                         </CardContent>
                                         <CardActions>
                                              <Button size="small" color="primary">
-                                                  <a href={project.url} target="_blank">Visit</a>
+                                                  <a href={project.url} target="blank">Visit</a>
                                              </Button>
                                              <Button size="small" color="primary">
-                                                  <a href={project.gitHubUrl} target="_blank">GitHub</a>
+                                                  <a href={project.gitHubUrl} target="blank">GitHub</a>
                                              </Button>
                                         </CardActions>
                                    </Card>

@@ -1,5 +1,4 @@
 import React from 'react'
-import myAvatar from '../images/henrique_avatar.svg'
 const linkedinPicture = "https://media-exp1.licdn.com/dms/image/C4D03AQEPwa-TZ-TuiQ/profile-displayphoto-shrink_800_800/0/1601485699927?e=1622073600&v=beta&t=4zGy2M2ppcdhiaoXmFRjnROY2mVhpGtADAq2M-RAeNo"
 
 const AboutPage = () => (
