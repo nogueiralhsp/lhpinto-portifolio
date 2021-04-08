@@ -1,0 +1,22 @@
+.skill-page-content {
+     color: $off-white;
+     min-height: 50rem;
+}
+.web-dev-container {
+     margin-bottom: 5rem;
+}
+.skill-page-content h2 {
+     color: $off-white;
+     text-align: center;
+}
+
+.skill-page-icon {
+     color: $off-white;
+     font-size: $xl-size;
+     padding: $s-size;
+}
+
+.skill-page-icon:hover {
+     color: $yellow;
+     font-size: $xl-size * 1.2;
+}

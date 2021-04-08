@@ -1,0 +1,13 @@
+.main-content{
+    margin-bottom: 5rem;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .main-content{
+        transform: scale(0.9);
+    }
+}
+
+.card{
+    min-height: 45rem;
+}
