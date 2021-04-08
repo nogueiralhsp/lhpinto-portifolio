@@ -16,15 +16,12 @@ class ContactPage extends React.Component {
      }
      handleNameChange(e) {
           this.setState({ name: e.target.value });
-          console.log(this.state.name);
      }
      handleEmailChange(e) {
           this.setState({ email: e.target.value });
-          console.log(this.state.email);
      }
      handleMessageChange(e) {
           this.setState({ message: e.target.value });
-          console.log(this.state.message);
      }
 
      handleSubmit(e) {
@@ -33,10 +30,10 @@ class ContactPage extends React.Component {
           var myHeaders = new Headers();
           myHeaders.append("Content-Type", "application/json");
 
-          var raw = JSON.stringify({ ...this.state });
+          var raw = JSON.stringify( {...this.state });
 
           var requestOptions = {
-               method: 'GET',
+               method: 'POST',
                headers: myHeaders,
                body: raw,
                redirect: 'follow'
@@ -44,9 +41,31 @@ class ContactPage extends React.Component {
 
           fetch("https://nogueiralhspcontactrequest.herokuapp.com/mail", requestOptions)
                .then(response => response.text())
-               .then(result => console.log(result))
-               .catch(error => console.log('error', error));
+               // .then(result => console.log(result))
+               // .catch(error => console.log('error', error));
+
+         
+          // var raw = JSON.stringify({
+          //      "name": "Henrique Nogueira",
+          //      "email": "nogueiralhsp@gmail.com",
+          //      "message": "here goes your text"
+          // });
+
+          // var requestOptions = {
+          //      method: 'GET',
+          //      headers: myHeaders,
+          //      body: raw,
+          //      redirect: 'follow'
+          // };
+
+          // fetch("https://nogueiralhspcontactrequest.herokuapp.com/mail", requestOptions)
+          //      .then(response => response.text())
+          //      .then(result => console.log(result))
+          //      .catch(error => console.log('error', error));
+
      }
+
+
 
      render() {
           return (
