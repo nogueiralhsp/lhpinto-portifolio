@@ -33,7 +33,7 @@ class ContactPage extends React.Component {
           var myHeaders = new Headers();
           myHeaders.append("Content-Type", "application/json");
 
-          var raw = JSON.stringify({...this.state});
+          var raw = JSON.stringify({ ...this.state });
 
           var requestOptions = {
                method: 'GET',
