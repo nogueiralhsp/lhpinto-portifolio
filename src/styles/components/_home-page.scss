@@ -1,13 +1,23 @@
-.main-content{
+.main-content {
     margin-bottom: 5rem;
 }
 
+.home-page-description {
+    text-align: center;
+
+}
+
+.home-page-description a{
+    color: $white;
+
+}
+
 @media (max-width: $desktop-breakpoint) {
-    .main-content{
+    .main-content {
         transform: scale(0.9);
     }
 }
 
-.card{
-    min-height: 45rem;
+.card {
+    min-height: 35rem;
 }

@@ -10,6 +10,8 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
+import {CgSmileUpside} from 'react-icons/cg'
+
 import myPortfolio from '../images/portfolio.png'
 import myGitHub from '../images/gitHub.png'
 import cruzDeMalta from '../images/cruzDeMalta.png'
@@ -61,7 +63,9 @@ function HomePage() {
                <div className="main-content">
                     <div className="home-page-description">
                          <h1>Welcome to my portfolio!</h1>
-                         <p>Below you will find some of the projects I have been working or worked with, feel free to get in contact if in doubt, and I hope you like it! </p>
+                         <p>Below you will find some of the projects I have been working or have worked on, and I hope you like it! <br/> Feel free to get in contact if in any doubt.</p>
+                         <p> I often update components and functionalities, so welcome to visit me again.</p>
+                         <p>If you spot any room for improvment, plese let us know on <a href="/contact">contact page</a>.</p>
                     </div>
                </div>
                <Container className="card-grid" maxWidth="md">

@@ -5,6 +5,7 @@ import { CgCPlusPlus } from 'react-icons/cg'
 import { FaIndustry, FaRaspberryPi } from 'react-icons/fa'
 import { MdHttp } from 'react-icons/md'
 import { SiJavascript, SiArduino, SiHeroku, SiWebpack } from 'react-icons/si'
+import {IoLogoVercel} from 'react-icons/io5'
 
 const SkillPage = () => (
      <div className="skill-page-content">
@@ -21,12 +22,16 @@ const SkillPage = () => (
                          <p>C / C++</p>
                     </div>
                     <div>
+                         <SiWebpack className="skill-page-icon" />
+                         <p>Webpack</p>
+                    </div>
+                    <div>
                          <SiHeroku className="skill-page-icon" />
                          <p>Heroku</p>
                     </div>
                     <div>
-                         <SiWebpack className="skill-page-icon" />
-                         <p>Webpack</p>
+                         <IoLogoVercel className="skill-page-icon" />
+                         <p>Vercel</p>
                     </div>
                </div>
           </div>
