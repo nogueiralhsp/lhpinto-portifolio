@@ -1,9 +1,4 @@
-.contact-page-content {
-     margin-top: $xl-size;
-     display: flex;
-     justify-content: center;
-     gap: $l-size;
-}
+
 
 // Left container
 .contact-page-left-container {
@@ -12,9 +7,22 @@
 }
 
 .left-container-icon {
-     font-size: 150px;
+     font-size: 50px;
+     margin-top: $xl-size;
 }
 
+@media (min-width: $desktop-breakpoint) {
+     .contact-page-content {
+          margin-top: $xl-size;
+          display: flex;
+          justify-content: center;
+          gap: $l-size;
+     }
+
+     .left-container-icon {
+          font-size: 150px;
+     }
+}
 .contact-page-form-container {
      min-width: 50%;
 }
@@ -37,6 +45,3 @@
      margin: $m-size auto;
      font-size: $m-size;
 }
-
-
-//<input type="text" style="margin:0px auto; display:block;" />

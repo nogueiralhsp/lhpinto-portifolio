@@ -4,20 +4,25 @@
 
 .home-page-description {
     text-align: center;
-
 }
 
-.home-page-description a{
+.home-page-description a {
     color: $white;
-
 }
 
 @media (max-width: $desktop-breakpoint) {
-    .main-content {
-        transform: scale(0.9);
+    .home-page-description {
+        transform: scale(0.85);
+    }
+    .MuiGrid-root {
+        color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
 .card {
     min-height: 35rem;
+    max-width: 25rem;
 }

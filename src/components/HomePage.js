@@ -10,8 +10,6 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
-import {CgSmileUpside} from 'react-icons/cg'
-
 import myPortfolio from '../images/portfolio.png'
 import myGitHub from '../images/gitHub.png'
 import cruzDeMalta from '../images/cruzDeMalta.png'
@@ -27,17 +25,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const projects = [{
-     projectName: 'My portfolio',
-     url: '/',
-     gitHubUrl: 'https://github.com/nogueiralhsp/lhpinto-portifolio',
-     image: myPortfolio,
-     projectDescription: 'In this project I built this website. \n Using React and some components of Material UI. It is a working in progress, so every feedback is welcome!'
-}, {
      projectName: 'My GitHub',
      url: 'https://github.com/nogueiralhsp',
      gitHubUrl: 'https://github.com/nogueiralhsp',
      image: myGitHub,
      projectDescription: 'My git hub page, most of my projects are public. If interested in any in particular get in touch in the contacts =)'
+}, {
+     projectName: 'My portfolio',
+     url: '/',
+     gitHubUrl: 'https://github.com/nogueiralhsp/lhpinto-portifolio',
+     image: myPortfolio,
+     projectDescription: 'In this project I built this website. \n Using React and some components of Material UI. It is a working in progress, so every feedback is welcome!'
 }, {
      projectName: 'Moto Club',
      url: 'https://cruzdemalta.herokuapp.com/',
@@ -63,14 +61,15 @@ function HomePage() {
                <div className="main-content">
                     <div className="home-page-description">
                          <h1>Welcome to my portfolio!</h1>
-                         <p>Below you will find some of the projects I have been working or have worked on, and I hope you like it! <br/> Feel free to get in contact if in any doubt.</p>
+                         <p>Below you will find some of the projects I have been working or have worked on, and I hope you like it! <br /> Feel free to get in contact if in any doubt.</p>
                          <p> I often update components and functionalities, so welcome to visit me again.</p>
                          <p>If you spot any room for improvment, plese let us know on <a href="/contact">contact page</a>.</p>
                     </div>
                </div>
-               <Container className="card-grid" maxWidth="md">
-                    <Grid container spacing={4}>
+               <Container className="card-grid" maxWidth="md" >
+                    <Grid container spacing={4} alignContent='center'>
                          {projects.map((project) => (
+
                               <Grid item key={project.projectName} xs={12} sm={6} md={4}>
                                    <Card className="card">
                                         <a href={project.url} target="blank">
