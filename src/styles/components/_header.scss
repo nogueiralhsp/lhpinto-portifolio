@@ -9,20 +9,16 @@
 .header-name h2 {
      text-align: left;
      margin: 0;
-     padding:0.5rem 0 0 3rem;
+     padding: 0.5rem 0 0 3rem;
      color: $off-white;
 }
 .header-name p {
      text-align: left;
      margin: 0;
-     padding:0 0 0 3rem;
+     padding: 0 0 0 3rem;
      color: $off-white;
 }
 
-.header-name h2:hover {
-     color: #8aa8bd;
-     transform: scale(1, 1.1);
-}
 .navigation-menu {
      display: flex;
      flex-direction: row;
@@ -96,9 +92,8 @@
 }
 
 /*Responsive Styles*/
-
-@media screen and (max-width: 800px) {
-     .mobile-menu .lines {
+@media (max-width: $desktop-breakpoint) {
+     .mobile-menu li {
           border-bottom: 15px double #f8f8f8;
           border-top: 5px solid #f8f8f8;
           content: "";
@@ -111,18 +106,19 @@
      .mobile-menu ul {
           position: static;
           display: none;
+          color: red;
      }
      /*Create vertical spacing*/
-     .mobile-menu li {
-          margin-bottom: 1px;
-     }
-     /*Make all menu links full width*/
-     .mobile-menu ul li,
-     .mobile-menu li a {
-          width: 100%;
-     }
-     /*Display 'show menu' link*/
-     .mobile-menu .show-menu {
-          display: block;
-     }
+     // .mobile-menu li {
+     //      margin-bottom: 1px;
+     // }
+     // /*Make all menu links full width*/
+     // .mobile-menu ul li,
+     // .mobile-menu li a {
+     //      width: 100%;
+     // }
+     // /*Display 'show menu' link*/
+     // .mobile-menu .show-menu {
+     //      display: block;
+     // }
 }

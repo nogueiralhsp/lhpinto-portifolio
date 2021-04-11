@@ -8,13 +8,13 @@ const Header = () => (
                <ul className="mobile-menu">
                     <li><NavLink to="/" activeClassName="is-active" exact={true}>Home</NavLink></li>
                     <li><NavLink to="/skills" activeClassName="is-active">Skills</NavLink></li>
-                    <li><NavLink to="/about" activeClassName="is-active" exact={true}>About</NavLink></li>
-                    <li><NavLink to="/contact" activeClassName="is-active" exact={true}>Contact</NavLink></li>
+                    <li><NavLink to="/about" activeClassName="is-active">About</NavLink></li>
+                    <li><NavLink to="/contact" activeClassName="is-active">Contact</NavLink></li>
                </ul>
           </div>
           <div className="header-name">
-               <a href="/contact"><h2>Luiz Henrique Pinto</h2></a>
-               <p>nogueiralhsp@gmail.com</p>
+               <h2>Luiz Henrique Pinto</h2>
+               <a href="/contact"><p>nogueiralhsp@gmail.com</p></a>
 
           </div>
      </header>

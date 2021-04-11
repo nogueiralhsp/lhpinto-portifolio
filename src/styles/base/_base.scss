@@ -2,6 +2,12 @@ html {
   font-size: 62.5%;
 }
 
+@media (min-width: $desktop-breakpoint) {
+ html{
+   font-size: 80%;
+ }
+}
+
 body {
   background-color: rgb(4, 1, 22);
 
