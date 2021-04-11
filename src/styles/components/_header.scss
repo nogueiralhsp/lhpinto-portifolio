@@ -19,30 +19,16 @@
      color: $off-white;
 }
 
+/*      here starts navigation menu       */
 .navigation-menu {
      display: flex;
      flex-direction: row;
 }
-
-// Component Menu
-.mobile-menu {
-     display: block;
-     background: $dark-blue;
-     font-weight: 400;
-     line-height: $m-size;
-     margin: 0;
-     padding: 0;
-     text-align: center;
-     width: 100%;
+.menu-FaBars{
+     display: none;
 }
-/*Strip the ul of padding and list styling*/
-.mobile-menu ul {
-     background: $dark-blue;
-     list-style-type: none;
-     margin: 0 auto;
-     padding: 0;
-     text-align: center;
-     width: 100%;
+.menu-home-active {
+     display: none;
 }
 
 /*Create a horizontal list with spacing*/
@@ -68,7 +54,6 @@
 
 // /*Hover state for top level links*/
 .mobile-menu li:hover a {
-     color: $white;
      background-color: $dark-green;
 }
 
@@ -79,46 +64,19 @@
      padding: 0 20px;
 }
 
-/*Style 'show menu' label button and hide it by default*/
-.mobile-menu .show-menu {
-     text-decoration: none;
-     color: #fff;
-     background: #8aa8bd;
-     text-align: center;
-     padding: 10px 15px;
-     display: none;
-     cursor: pointer;
-     text-transform: uppercase;
-}
-
-/*Responsive Styles*/
+//**** Mobile formating hiding top menu    ****//
 @media (max-width: $desktop-breakpoint) {
-     .mobile-menu li {
-          border-bottom: 15px double #f8f8f8;
-          border-top: 5px solid #f8f8f8;
-          content: "";
-          height: 5px;
-          width: 20px;
-          padding-right: 15px;
-          float: right;
+     .menu-home-active {
+          display: flex;
      }
-     /*Make dropdown links appear inline*/
-     .mobile-menu ul {
-          position: static;
+
+     .mobile-menu {
           display: none;
-          color: red;
+
+          // display: flex;
+          // padding: 14px 16px;
+          // text-decoration: none;
+          // font-size: 17px;
+          // display: block;
      }
-     /*Create vertical spacing*/
-     // .mobile-menu li {
-     //      margin-bottom: 1px;
-     // }
-     // /*Make all menu links full width*/
-     // .mobile-menu ul li,
-     // .mobile-menu li a {
-     //      width: 100%;
-     // }
-     // /*Display 'show menu' link*/
-     // .mobile-menu .show-menu {
-     //      display: block;
-     // }
 }
