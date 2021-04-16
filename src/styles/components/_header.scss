@@ -2,32 +2,14 @@
      text-align: center;
 }
 
-.header-name a {
-     text-decoration: none;
-}
-
-.header-name h2 {
-     text-align: left;
-     margin: 0;
-     padding: 0.5rem 0 0 3rem;
-     color: $off-white;
-}
-.header-name p {
-     text-align: left;
-     margin: 0;
-     padding: 0 0 0 3rem;
-     color: $off-white;
-}
-
 /*      here starts navigation menu       */
 .navigation-menu {
      display: flex;
      flex-direction: row;
 }
+
+
 .menu-FaBars{
-     display: none;
-}
-.menu-home-active {
      display: none;
 }
 
@@ -38,7 +20,7 @@
 
 // /*Style for menu links*/
 .mobile-menu li a {
-     display: block;
+     display: flex;
      min-width: 170px;
      text-align: center;
      color: $off-white;
@@ -66,17 +48,19 @@
 
 //**** Mobile formating hiding top menu    ****//
 @media (max-width: $desktop-breakpoint) {
-     .menu-home-active {
+     .navigation-menu {
           display: flex;
+          flex-direction: column;
+          justify-content: center;
      }
-
-     .mobile-menu {
-          display: none;
-          hidden: true;
-          // display: flex;
-          // padding: 14px 16px;
-          // text-decoration: none;
-          // font-size: 17px;
-          // display: block;
+     .menu-button{
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+     
+     }
+     .menu-FaBars{
+          display: flex;
      }
 }

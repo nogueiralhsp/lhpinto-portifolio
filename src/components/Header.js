@@ -7,46 +7,55 @@ class Header extends React.Component {
      constructor(props) {
           super(props)
           this.state = {
-
+               menuActive: false,
+               windowWidth: window.innerWidth
           }
-          this.handleMenuClick = this.handleMenuClick.bind(this);
+          this.handleMenuClick = this.handleMenuClick.bind(this)
+          this.startWindscreenSize = this.startWindscreenSize.bind(this)
+          this.topMenu = this.topMenu.bind(this)
 
      }
 
      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
      handleMenuClick() {
-          var x = document.getElementsByClassName("mobile-menu");
-          console.log(x.HTMLCollection)
-          // if (x.style.display === "block") {
-          //      x.style.display = "none";
-          // } else {
-          //      x.style.display = "block";
-          // }
+          if (this.state.menuActive) {
+               this.setState(() => ({ menuActive: false }))
+          } else {
+               this.setState(() => ({ menuActive: true }))
+          }
+     }
+     startWindscreenSize() {
+          if (window.innerWidth > 540) {
+               return false //returns false if on mobile
+          } else {
+               return true //returns true if on laptop/desktop
+          }
+
+     }
+     topMenu() {
+          return (
+               <ul className="mobile-menu">
+                    <li><NavLink to="/" className="mobile-menu-link" exact={true}>Home</NavLink></li>
+                    <li><NavLink to="/skills" className="mobile-menu-link">Skills</NavLink></li>
+                    <li><NavLink to="/about" className="mobile-menu-link">About</NavLink></li>
+                    <li><NavLink to="/contact" className="mobile-menu-link">Contact</NavLink></li>
+               </ul>
+          )
      }
 
      render() {
           return (
                <header className="header">
-
                     <div className="navigation-menu">
-                         <FaBars
-                              onClick={this.handleMenuClick}
-                              className="menu-home-active"
-                         />
-                         <ul className="mobile-menu">
-                              <li><NavLink to="/" className="mobile-menu-link" exact={true}>Home</NavLink></li>
-                              <li><NavLink to="/skills" className="mobile-menu-link">Skills</NavLink></li>
-                              <li><NavLink to="/about" className="mobile-menu-link">About</NavLink></li>
-                              <li><NavLink to="/contact" className="mobile-menu-link">Contact</NavLink></li>
-
-                         </ul>
-
-                    </div>
-
-                    <div className="header-name">
-                         <h2>Luiz Henrique Pinto</h2>
-                         <a href="/contact"><p>nogueiralhsp@gmail.com</p></a>
-
+                         <div className="menu-button">
+                              <h3>
+                                   <FaBars
+                                        onClick={this.handleMenuClick}
+                                        className="menu-FaBars"
+                                   />
+                              </h3>
+                         </div>
+                         {this.startWindscreenSize() && this.state.menuActive || !this.startWindscreenSize() ? this.topMenu() : ''}
                     </div>
                </header>
           )

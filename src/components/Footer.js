@@ -3,7 +3,11 @@ import { FaLinkedin, FaGithub, FaCodepen } from 'react-icons/fa';
 
 const Footer = () => (
      <div className="footer">
+          <div className="footer-name">
+               <h2>Luiz Henrique Pinto</h2>
+               <a href="/contact"><p>nogueiralhsp@gmail.com</p></a>
 
+          </div>
           <div className="footer-icon-container">
                <a href="https://www.linkedin.com/in/luizhenriquepinto/" target="blank">
                     <FaLinkedin className="footer-icon" />
@@ -16,6 +20,7 @@ const Footer = () => (
                     <FaCodepen className="footer-icon" />
                </a>
           </div>
+
      </div>
 );
 
