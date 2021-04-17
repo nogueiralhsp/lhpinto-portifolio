@@ -35,7 +35,7 @@ const projects = [{
      url: '/',
      gitHubUrl: 'https://github.com/nogueiralhsp/lhpinto-portifolio',
      image: myPortfolio,
-     projectDescription: 'In this project I built this website. \n Using React and some components of Material UI. It is a working in progress, so every feedback is welcome!'
+     projectDescription: 'In this project I built this website. \n Using Node.js on BackEnd with React and some components of Material UI on Front End. It is a working in progress, so every feedback is welcome!'
 }, {
      projectName: 'Moto Club',
      url: 'https://cruzdemalta.herokuapp.com/',
@@ -61,7 +61,7 @@ function HomePage() {
                <div className="main-content">
                     <div className="home-page-description">
                          <h1>Welcome to my portfolio!</h1>
-                         <p>Below you will find some of the projects I have been working or have worked on, and I hope you like it! <br /> Feel free to get in contact if in any doubt.</p>
+                         <p>Hi! I'm Luiz and below you will find some of the projects I have been working or have worked on.<br/>I hope you like it! <br /> Feel free to get in contact if in any doubt.</p>
                          <p> I often update components and functionalities, so welcome to visit me again.</p>
                          <p>If you spot any room for improvment, plese let us know on <a href="/contact">contact page</a>.</p>
                     </div>
