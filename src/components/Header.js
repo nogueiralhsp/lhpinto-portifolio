@@ -55,7 +55,8 @@ class Header extends React.Component {
                                    />
                               </h3>
                          </div>
-                         {this.startWindscreenSize() && this.state.menuActive || !this.startWindscreenSize() ? this.topMenu() : ''}
+                         {this.startWindscreenSize() && this.state.menuActive ? this.topMenu() : ''}
+                         {!this.startWindscreenSize() ? this.topMenu() : ''}
                     </div>
                </header>
           )
