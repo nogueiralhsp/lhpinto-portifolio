@@ -12,7 +12,8 @@ class ContactPage extends React.Component {
                email: '',
                message: '',
                messageValidator: false,
-               fillUpMessage: 'Please fill this fields'
+               fillUpMessage: 'Please fill this fields',
+               messageSent: false,
           }
 
           this.handleNameChange = this.handleNameChange.bind(this);
@@ -37,7 +38,7 @@ class ContactPage extends React.Component {
           e.preventDefault();
 
           if (validator.isEmail(this.state.email)) {
-               // console.log('this is an email');
+               console.log('email sent');
                // var myHeaders = new Headers();
                // myHeaders.append("Content-Type", "application/json");
 
@@ -54,10 +55,12 @@ class ContactPage extends React.Component {
                // .then(response => response.text())
                // .then(result => console.log(result))
                // .catch(error => console.log('error', error));
+               this.setState({ messageSent: true })
           } else {
                console.log('we are here');
                console.log(this.state.messageValidator);
                this.setState({ messageValidator: true })
+               this.setState({ messageSent: false })
           }
      }
 
@@ -75,6 +78,7 @@ class ContactPage extends React.Component {
                     <div className="contact-page-form-container">
 
                          <form className="contact-form" onSubmit={this.handleSubmit}>
+                              {this.state.messageValidator && this.state.fillUpMessage}
                               <input
                                    placeholder="Name"
                                    type="text"
@@ -97,11 +101,14 @@ class ContactPage extends React.Component {
                                    placeholder="message"
                                    onChange={this.handleMessageChange}
                               />
-                              <input
-                                   type="submit"
-                                   value="Submit"
+                              {!this.state.messageSent ?
+                                   <input
+                                        type="submit"
+                                        value="Submit"
 
-                              />
+                                   /> :
+                                   <h3> <br /> Thank you for your contact, I'll get back to you shortly</h3>
+                              }
                          </form>
                     </div>
 
