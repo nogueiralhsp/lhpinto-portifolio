@@ -61,9 +61,9 @@ function HomePage() {
                <div className="main-content">
                     <div className="home-page-description">
                          <h1>Welcome to my portfolio!</h1>
-                         <p>Hi! I'm Luiz and below you will find some of the projects I have been working or have worked on.<br/>I hope you like it! <br /> Feel free to get in contact if in any doubt.</p>
+                         <p>Hi! I'm Luiz and this is my portifolio. <br/> Below you will find some of the projects I have been working or have worked on. I hope you like it!<br />Feel free to get in contact if in any doubt.</p>
                          <p> I often update components and functionalities, so welcome to visit me again.</p>
-                         <p>If you spot any room for improvment, plese let us know on <a href="/contact">contact page</a>.</p>
+                         <p>If you spot any room for improvment or any idea to make it better, plese let us know on <a href="/contact">contact page</a>.</p>
                     </div>
                </div>
                <Container className="card-grid" maxWidth="md" >

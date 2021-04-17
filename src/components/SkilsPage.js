@@ -1,11 +1,11 @@
 import React from 'react'
-import { AiFillCopyrightCircle, AiFillDatabase } from 'react-icons/ai'
+import { AiFillDatabase } from 'react-icons/ai'
 import { BsGearWideConnected } from 'react-icons/bs'
 import { CgCPlusPlus } from 'react-icons/cg'
 import { FaIndustry, FaRaspberryPi } from 'react-icons/fa'
 import { MdHttp } from 'react-icons/md'
 import { SiJavascript, SiArduino, SiHeroku, SiWebpack } from 'react-icons/si'
-import {IoLogoVercel} from 'react-icons/io5'
+import { IoLogoVercel } from 'react-icons/io5'
 
 const SkillPage = () => (
      <div className="skill-page-content">
@@ -17,7 +17,6 @@ const SkillPage = () => (
                          <p>JavaScript</p>
                     </div>
                     <div>
-                         <AiFillCopyrightCircle className="skill-page-icon" />
                          <CgCPlusPlus className="skill-page-icon" />
                          <p>C / C++</p>
                     </div>
@@ -40,7 +39,7 @@ const SkillPage = () => (
                <div className="skill-icon-container">
                     <div>
                          <FaIndustry className="skill-page-icon" />
-                         <p>PLC / HMI & Robots</p>
+                         <p>PLC / HMI<br />& Robots</p>
                     </div>
                     <div>
                          <SiArduino className="skill-page-icon" />

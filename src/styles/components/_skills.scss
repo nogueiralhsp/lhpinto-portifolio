@@ -29,3 +29,17 @@
      color: $green;
      font-size: $xl-size * 1.2;
 }
+
+//Handling Mobile Screen
+@media (max-width: $desktop-breakpoint) {
+     .skill-page-content {
+          transform: scale(0.75);
+          margin: auto;
+          text-align: center;
+     }
+     .skill-icon-container {
+          display: flex;
+          gap: $l-size;
+          justify-content: center;
+     }
+}

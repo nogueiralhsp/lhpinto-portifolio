@@ -11,7 +11,7 @@ class Header extends React.Component {
                windowWidth: window.innerWidth
           }
           this.handleMenuClick = this.handleMenuClick.bind(this)
-          this.startWindscreenSize = this.startWindscreenSize.bind(this)
+          this.isSmallScreen = this.isSmallScreen.bind(this)
           this.topMenu = this.topMenu.bind(this)
 
      }
@@ -24,7 +24,7 @@ class Header extends React.Component {
                this.setState(() => ({ menuActive: true }))
           }
      }
-     startWindscreenSize() {
+     isSmallScreen() {
           if (window.innerWidth > 540) {
                return false //returns false if on mobile
           } else {
@@ -35,17 +35,22 @@ class Header extends React.Component {
      topMenu() {
           return (
                <ul className="mobile-menu">
-                    <li><NavLink to="/" className="mobile-menu-link" exact={true}>Home</NavLink></li>
-                    <li><NavLink to="/skills" className="mobile-menu-link">Skills</NavLink></li>
-                    <li><NavLink to="/about" className="mobile-menu-link">About</NavLink></li>
-                    <li><NavLink to="/contact" className="mobile-menu-link">Contact</NavLink></li>
+                    <li><NavLink to="/" className="mobile-menu-link" exact={true} onClick={this.handleMenuClick}>Home</NavLink></li>
+                    <li><NavLink to="/skills" className="mobile-menu-link" onClick={this.handleMenuClick}>Skills</NavLink></li>
+                    <li><NavLink to="/about" className="mobile-menu-link" onClick={this.handleMenuClick}>About</NavLink></li>
+                    <li><NavLink to="/contact" className="mobile-menu-link" onClick={this.handleMenuClick}>Contact</NavLink></li>
                </ul>
           )
      }
 
      render() {
           return (
-               <header className="header">
+               <div className="header">
+                    <div className="header-name">
+                         <h2>Luiz Henrique Pinto</h2>
+                         <a href="/contact"><p>nogueiralhsp@gmail.com</p></a>
+
+                    </div>
                     <div className="navigation-menu">
                          <div className="menu-button">
                               <h3>
@@ -55,10 +60,10 @@ class Header extends React.Component {
                                    />
                               </h3>
                          </div>
-                         {this.startWindscreenSize() && this.state.menuActive ? this.topMenu() : ''}
-                         {!this.startWindscreenSize() ? this.topMenu() : ''}
+                         {this.isSmallScreen() && this.state.menuActive ? <div>{this.topMenu()} </div> : ''}
+                         {!this.isSmallScreen() && this.topMenu()}
                     </div>
-               </header>
+               </div>
           )
      }
 }
