@@ -38,26 +38,22 @@ class ContactPage extends React.Component {
           e.preventDefault();
 
           if (validator.isEmail(this.state.email)) {
-               console.log('email sent');
-               // var myHeaders = new Headers();
-               // myHeaders.append("Content-Type", "application/json");
+               var myHeaders = new Headers();
+               myHeaders.append("Content-Type", "application/json");
 
-               // var raw = JSON.stringify({ ...this.state });
+               var raw = JSON.stringify({ ...this.state });
 
-               // var requestOptions = {
-               //      method: 'POST',
-               //      headers: myHeaders,
-               //      body: raw,
-               //      redirect: 'follow'
-               // };
+               var requestOptions = {
+                    method: 'POST',
+                    headers: myHeaders,
+                    body: raw,
+                    redirect: 'follow'
+               };
 
-               // fetch("https://nogueiralhspcontactrequest.herokuapp.com/mail", requestOptions)
-               // .then(response => response.text())
-               // .then(result => console.log(result))
-               // .catch(error => console.log('error', error));
+               fetch("https://nogueiralhspcontactrequest.herokuapp.com/mail", requestOptions)
+
                this.setState({ messageSent: true })
           } else {
-               console.log('we are here');
                console.log(this.state.messageValidator);
                this.setState({ messageValidator: true })
                this.setState({ messageSent: false })
@@ -84,6 +80,7 @@ class ContactPage extends React.Component {
                                    type="text"
                                    name="name"
                                    onChange={this.handleNameChange}
+                                   disabled={this.state.messageSent}
                               />
                               {this.state.messageValidator && this.state.fillUpMessage}
                               <input
@@ -91,6 +88,7 @@ class ContactPage extends React.Component {
                                    type="text"
                                    name="email"
                                    onChange={this.handleEmailChange}
+                                   disabled={this.state.messageSent}
                               />
                               {this.state.messageValidator && this.state.fillUpMessage}
                               <textarea
@@ -100,13 +98,14 @@ class ContactPage extends React.Component {
                                    rows="10"
                                    placeholder="message"
                                    onChange={this.handleMessageChange}
+                                   disabled={this.state.messageSent}
                               />
                               {!this.state.messageSent ?
                                    <input
                                         type="submit"
                                         value="Submit"
-
-                                   /> :
+                                   />
+                                   :
                                    <h3> <br /> Thank you for your contact, I'll get back to you shortly</h3>
                               }
                          </form>
