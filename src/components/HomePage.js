@@ -38,7 +38,7 @@ const projects = [{
      projectDescription: 'In this project I built this website. \n Using Node.js on BackEnd with React and some components of Material UI on Front End. It is a working in progress, so every feedback is welcome!'
 }, {
      projectName: 'Moto Club',
-     url: 'https://cruzdemalta.herokuapp.com/',
+     url: 'https://cruzdemalta.vercel.app/',
      gitHubUrl: '#',
      image: cruzDeMalta,
      projectDescription: 'Quick project for a motorcycle club in Brazil. If interested seeing the code get in touch in the contacts =)'
@@ -63,6 +63,7 @@ function HomePage() {
                          <h1>Welcome to my portfolio!</h1>
                          <p>Hi! I'm Luiz and this is my portifolio. <br/> Below you will find some of the projects I have been working or have worked on. I hope you like it!<br />Feel free to get in contact if in any doubt.</p>
                          <p> I often update components and functionalities, so welcome to visit me again.</p>
+                         <p>This page I've used JavaScript with React Library and SassScript for styling, and some NPM's modules do handle the contact page.</p>
                          <p>If you spot any room for improvment or any idea to make it better, plese let us know on <a href="/contact">contact page</a>.</p>
                     </div>
                </div>
