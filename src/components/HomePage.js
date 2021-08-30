@@ -13,6 +13,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import myPortfolio from '../images/portfolio.png'
 import myGitHub from '../images/gitHub.png'
 import cruzDeMalta from '../images/cruzDeMalta.png'
+import homeAutomationImg from '../images/home_automation.png'
 import weatherAplication from '../images/weatherAplication.png'
 
 const useStyles = makeStyles((theme) => ({
@@ -37,6 +38,12 @@ const projects = [{
      image: myPortfolio,
      projectDescription: 'In this project I built this website. \n Using Node.js on BackEnd with React and some components of Material UI on Front End. It is a working in progress, so every feedback is welcome!'
 }, {
+     projectName: 'Home Automation',
+     url: 'https://home-automation-lpinto.vercel.app/',
+     gitHubUrl: 'https://github.com/nogueiralhsp/home_automation',
+     image: homeAutomationImg,
+     projectDescription: 'House Automation Project Integrating a Rasberry Pi with web application'
+}, {
      projectName: 'Moto Club',
      url: 'https://cruzdemalta.vercel.app/',
      gitHubUrl: '#',
@@ -48,7 +55,7 @@ const projects = [{
      gitHubUrl: 'https://github.com/nogueiralhsp/node_course_weather_app',
      image: weatherAplication,
      projectDescription: 'Done when studing about backend using thrid parts APIs and rendering the information with location given by user'
-}]
+},]
 
 
 
@@ -63,7 +70,7 @@ function HomePage() {
                          <h1>Welcome to my portfolio!</h1>
                          <p>Hi! I'm Luiz and this is my portifolio. <br/> Below you will find some of the projects I have been working or have worked on. I hope you like it!<br />Feel free to get in contact if in any doubt.</p>
                          <p> I often update components and functionalities, so welcome to visit me again.</p>
-                         <p>This page I've used JavaScript with React Library and SassScript for styling, and some NPM's modules do handle the contact page.</p>
+                         <p>I've built this webapp using JavaScript with React Library and SassScript for styling, and some NPM's modules do handle the contact page.</p>
                          <p>If you spot any room for improvment or any idea to make it better, plese let us know on <a href="/contact">contact page</a>.</p>
                     </div>
                </div>
