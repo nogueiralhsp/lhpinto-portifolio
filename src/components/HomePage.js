@@ -42,7 +42,7 @@ const projects = [{
      url: 'https://home-automation-lpinto.vercel.app/',
      gitHubUrl: 'https://github.com/nogueiralhsp/home_automation',
      image: homeAutomationImg,
-     projectDescription: 'House Automation Project Integrating a Rasberry Pi with web application'
+     projectDescription: 'House Automation Project Integrating a Rasberry Pi and a forcast API with web application'
 }, {
      projectName: 'Moto Club',
      url: 'https://cruzdemalta.vercel.app/',
