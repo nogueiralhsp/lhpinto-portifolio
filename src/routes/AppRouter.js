@@ -11,22 +11,23 @@ import {
 } from '../components'
 
 const AppRouter = () => (
-    <BrowserRouter>
-        <div>
-            <Header />
-            <div className="main-content-container">
-                <Switch>
-                    <Route path="/" component={HomePage} exact={true} />
-                    <Route path="/about" component={AboutPage} />
-                    <Route path="/skills" component={SkillPage} />
-                    <Route path="/contact" component={ContactPage} />
-                </Switch>
+    <BrowserRouter >
+        <div className="main-app">
+            <div>
+                <Header />
+                <div className="main-content-container">
+                    <Switch>
+                        <Route path="/" component={HomePage} exact={true} />
+                        <Route path="/about" component={AboutPage} />
+                        <Route path="/skills" component={SkillPage} />
+                        <Route path="/contact" component={ContactPage} />
+                    </Switch>
+                </div>
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
-        <div>
-            <Footer />
-        </div>
-
     </BrowserRouter>
 
 )

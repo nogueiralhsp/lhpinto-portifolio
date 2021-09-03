@@ -25,7 +25,7 @@ const SkillPage = () => (
                          <SiHeroku className="skill-page-icon" />
                          <p>Heroku</p>
                     </div>
-                     <div>
+                    <div>
                          <IoLogoVercel className="skill-page-icon" />
                          <p>Vercel</p>
                     </div>
@@ -43,12 +43,12 @@ const SkillPage = () => (
                <h1><BsGearWideConnected /> Industrial Automation</h1>
                <div className="skill-icon-container">
                     <div>
-                         <FaIndustry className="skill-page-icon" />
-                         <p>PLC / HMI<br />& Robots</p>
-                    </div>
-                    <div>
                          <SiArduino className="skill-page-icon" />
                          <p>Arduino</p>
+                    </div>
+                    <div>
+                         <FaIndustry className="skill-page-icon" />
+                         <p>PLC / HMI<br />& Robots</p>
                     </div>
                     <div>
                          <FaRaspberryPi className="skill-page-icon" />
