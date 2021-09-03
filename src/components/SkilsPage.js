@@ -4,7 +4,7 @@ import { BsGearWideConnected } from 'react-icons/bs'
 import { CgCPlusPlus } from 'react-icons/cg'
 import { FaIndustry, FaRaspberryPi } from 'react-icons/fa'
 import { MdHttp } from 'react-icons/md'
-import { SiJavascript, SiArduino, SiHeroku, SiWebpack } from 'react-icons/si'
+import { SiArduino, SiHeroku, SiJavascript, SiPython, SiWebpack } from 'react-icons/si'
 import { IoLogoVercel } from 'react-icons/io5'
 
 const SkillPage = () => (
@@ -12,25 +12,30 @@ const SkillPage = () => (
           <div className="web-dev-container">
                <h1><MdHttp /><AiFillDatabase /> Web Development</h1>
                <div className="skill-icon-container">
-                    <div>
-                         <SiJavascript className="skill-page-icon" />
-                         <p>JavaScript</p>
-                    </div>
+
                     <div>
                          <CgCPlusPlus className="skill-page-icon" />
                          <p>C / C++</p>
                     </div>
                     <div>
-                         <SiWebpack className="skill-page-icon" />
-                         <p>Webpack</p>
+                         <SiJavascript className="skill-page-icon" />
+                         <p>JavaScript</p>
                     </div>
                     <div>
                          <SiHeroku className="skill-page-icon" />
                          <p>Heroku</p>
                     </div>
-                    <div>
+                     <div>
                          <IoLogoVercel className="skill-page-icon" />
                          <p>Vercel</p>
+                    </div>
+                    <div>
+                         <SiPython className="skill-page-icon" />
+                         <p>Python</p>
+                    </div>
+                    <div>
+                         <SiWebpack className="skill-page-icon" />
+                         <p>Webpack</p>
                     </div>
                </div>
           </div>
