@@ -14,6 +14,13 @@ const Footer = () => (
                     href="https://codepen.io/henriquenogueira" target="blank">
                     <FaCodepen className="footer-icon" />
                </a>
+               <div className="footer-contact">
+                    <p>Contact <br />
+                    Phone: 074 8227 5310 <br />
+                    Email: nogueiralhsp@gmail.com <br />
+                    Or use my <a href="/contact">contact page</a></p>
+                    
+               </div>
           </div>
 
      </div>
