@@ -10,10 +10,7 @@ const Footer = () => (
                <a href="https://github.com/nogueiralhsp" target="blank">
                     <FaGithub className="footer-icon" />
                </a>
-               <a
-                    href="https://codepen.io/henriquenogueira" target="blank">
-                    <FaCodepen className="footer-icon" />
-               </a>
+               
                <div className="footer-contact">
                     <p>Contact <br />
                     Phone: 074 8227 5310 <br />
