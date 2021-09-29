@@ -12,7 +12,9 @@ const Footer = () => (
                </a>
                <div>
                     <button className="button">
-                         <a href="https://drive.google.com/file/d/14-ZL3FSY46ezNoF4eEN8VBW1MlNy0yir/view?usp=sharing" target="blank">DOWNLOAD MY CV</a>
+                         <a href="https://drive.google.com/file/d/14-ZL3FSY46ezNoF4eEN8VBW1MlNy0yir/view?usp=sharing" target="blank">
+                              DOWNLOAD MY CV
+                         </a>
                     </button>
                </div>
                <div className="footer-contact">
