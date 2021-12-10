@@ -1,11 +1,13 @@
 import React from 'react'
-const linkedinPicture = "https://media-exp1.licdn.com/dms/image/C4D03AQEPwa-TZ-TuiQ/profile-displayphoto-shrink_800_800/0/1601485699927?e=1622073600&v=beta&t=4zGy2M2ppcdhiaoXmFRjnROY2mVhpGtADAq2M-RAeNo"
+// const linkedinPicture = "https://media-exp1.licdn.com/dms/image/C4D03AQEPwa-TZ-TuiQ/profile-displayphoto-shrink_800_800/0/1601485699927?e=1622073600&v=beta&t=4zGy2M2ppcdhiaoXmFRjnROY2mVhpGtADAq2M-RAeNo"
+import meAvatar from '../images/meAvatar.png'
+
 
 const AboutPage = () => (
      <div className="about-page-content">
           <div className="about-main-content">
                <div className="about-page-avatar-container">
-                    <img className="about-page-avatar" src={linkedinPicture} alt="my_picture" />
+                    <img className="about-page-avatar" src={meAvatar} alt="my_picture" />
                </div>
                <div className="about-page-description">
                     <h1>Software & Web App Developer</h1>
