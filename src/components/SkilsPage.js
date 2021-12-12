@@ -4,7 +4,7 @@ import { BsGearWideConnected } from 'react-icons/bs'
 import { CgCPlusPlus } from 'react-icons/cg'
 import { FaCss3, FaIndustry, FaRaspberryPi } from 'react-icons/fa'
 import { MdHttp } from 'react-icons/md'
-import { SiArduino, SiHeroku, SiJavascript, SiPython, SiReact, SiCsswizardry, SiWebpack } from 'react-icons/si'
+import { SiArduino, SiHeroku, SiJavascript, SiPython, SiReact, SiWebpack } from 'react-icons/si'
 import { IoLogoVercel } from 'react-icons/io5'
 
 const SkillPage = () => (
