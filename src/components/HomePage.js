@@ -13,6 +13,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import myPortfolio from '../images/portfolio.png'
 import myGitHub from '../images/gitHub.png'
 import cruzDeMalta from '../images/cruzDeMalta.png'
+import equipmentManagerImg from '../images/equipmentManager.png'
 import homeAutomationImg from '../images/home_automation.png'
 import weatherAplication from '../images/weatherAplication.png'
 
@@ -50,6 +51,12 @@ const projects = [{
      image: cruzDeMalta,
      projectDescription: 'Quick project for a motorcycle club in Brazil. If interested seeing the code get in touch in the contacts =)'
 }, {
+     projectName: 'Henrique Factory Manager App',
+     url: 'https://equipmentmanagerclient.vercel.app/',
+     gitHubUrl: 'https://github.com/nogueiralhsp/',
+     image: equipmentManagerImg,
+     projectDescription: 'Application for managing time down on machines and production.'
+}, {
      projectName: 'Weather Forcast',
      url: 'https://nogueira-weather-application.herokuapp.com/',
      gitHubUrl: 'https://github.com/nogueiralhsp/node_course_weather_app',
@@ -68,8 +75,7 @@ function HomePage() {
                <div className="main-content">
                     <div className="home-page-description">
                          <h1>Welcome to my portfolio!</h1>
-                         <p>Hi! I'm Luiz and this is my portfolio.<br />Below you will find some of the projects I have been working or have worked on. Mainly using React, Node.js and Python I have discovered the web application world!<br/>Feel free to get in contact if in any doubt.</p>
-                         <p> I often update components and functionalities, so welcome to visit me again.</p>
+                         <p>Hi! I'm Luiz and this is my portfolio.<br />Below you will find some of the projects I have been working or have worked on.<br /> Mainly using React, Node.js and Python I have discovered the web application world!<br />Feel free to get in contact if in any doubt.</p>
                          <p>I often update components and functionalities, so I hope to see you around soon!</p>
                          <p>If you spot any room for improvment or any idea to make it better, plese let us know on <a href="/contact">contact page</a>.</p>
                     </div>
