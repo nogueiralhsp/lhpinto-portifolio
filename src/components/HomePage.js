@@ -68,9 +68,9 @@ function HomePage() {
                <div className="main-content">
                     <div className="home-page-description">
                          <h1>Welcome to my portfolio!</h1>
-                         <p>Hi! I'm Luiz and this is my portifolio. <br/> Below you will find some of the projects I have been working or have worked on. I hope you like it!<br />Feel free to get in contact if in any doubt.</p>
+                         <p>Hi! I'm Luiz and this is my portfolio.<br />Below you will find some of the projects I have been working or have worked on. Mainly using React, Node.js and Python I have discovered the web application world!<br/>Feel free to get in contact if in any doubt.</p>
                          <p> I often update components and functionalities, so welcome to visit me again.</p>
-                         <p>I've built this webapp using JavaScript with React Library and SassScript for styling, and some NPM's modules do handle the contact page.</p>
+                         <p>I often update components and functionalities, so I hope to see you around soon!</p>
                          <p>If you spot any room for improvment or any idea to make it better, plese let us know on <a href="/contact">contact page</a>.</p>
                     </div>
                </div>
