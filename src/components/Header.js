@@ -47,8 +47,8 @@ class Header extends React.Component {
           return (
                <div className="header">
                     <div className="header-name">
-                         <h2>Luiz Henrique Pinto</h2>
-                         <a href="/contact"><p>nogueiralhsp@gmail.com</p></a>
+                         <h2><a href="/">Luiz Henrique Pinto</a></h2>
+                         <h4><a href="/contact">nogueiralhsp@gmail.com</a></h4>
 
                     </div>
                     <div className="navigation-menu">
