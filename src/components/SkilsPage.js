@@ -2,7 +2,7 @@ import React from 'react'
 import { AiFillDatabase } from 'react-icons/ai'
 import { BsGearWideConnected } from 'react-icons/bs'
 import { CgCPlusPlus } from 'react-icons/cg'
-import { FaIndustry, FaRaspberryPi } from 'react-icons/fa'
+import { FaCss3, FaIndustry, FaRaspberryPi } from 'react-icons/fa'
 import { MdHttp } from 'react-icons/md'
 import { SiArduino, SiHeroku, SiJavascript, SiPython, SiReact, SiCsswizardry, SiWebpack } from 'react-icons/si'
 import { IoLogoVercel } from 'react-icons/io5'
@@ -27,7 +27,7 @@ const SkillPage = () => (
                          <p>React</p>
                     </div>
                     <div>
-                         <SiCsswizardry className="skill-page-icon" />
+                         <FaCss3 className="skill-page-icon" />
                          <p>CSS</p>
                     </div>
                </div>
